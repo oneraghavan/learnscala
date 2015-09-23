@@ -1,0 +1,31 @@
+New log file opened at Fri Jul 24 09:33:33 IST 2015 by 5142@Raghavan.local
+Taking next connection to: 62629
+New client attempting to connect on port: 62630-62629
+  Address = /172.18.56.227:62629
+This client on port 62630 has uuid 3b5ab336-eb48-43f9-a0f2-2ee4efde143f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-3b5ab336-eb48-43f9-a0f2-2ee4efde143f
+Taking next connection to: 62629
+New client attempting to connect on port: 62642-62629
+  Address = /172.18.56.227:62629
+Handshake exception on socket: 62642
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 62629
+New client attempting to connect on port: 62643-62629
+  Address = /172.18.56.227:62629
+This client on port 62643 has uuid 3592638e-362b-42d3-a6fb-8b8e918aa4f7 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-3b5ab336-eb48-43f9-a0f2-2ee4efde143f, activator-3592638e-362b-42d3-a6fb-8b8e918aa4f7
+Taking next connection to: 62629
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 5142@Raghavan.local logs at Fri Jul 24 09:36:35 IST 2015, goodbye.
