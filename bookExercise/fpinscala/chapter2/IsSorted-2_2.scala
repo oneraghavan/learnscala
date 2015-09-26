@@ -11,7 +11,7 @@ object isSorted {
       }
 
     }
-    println(isSorted(Array(1, 2, 3, 4, 5), (A: Int, B: Int) => A < B))
+    println(isSorted(Array(1, 2, 3, 4, 5), (x: Int, y: Int) => x < y))
   }
 
 }
