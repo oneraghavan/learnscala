@@ -2,8 +2,6 @@
 object isSorted {
 
   def main(args: Array[String]) {
-    val ordered: (Int, Int) => Boolean = (A: Int, B: Int) => A < B
-
 
     def isSorted[A](as: Array[A], ordered: (A, A) => Boolean): Boolean = {
       val length: Int = as.length
@@ -13,7 +11,7 @@ object isSorted {
       }
 
     }
-    println(isSorted(Array(1, 2, 3, 4, 5), ordered))
+    println(isSorted(Array(1, 2, 3, 4, 5), (A: Int, B: Int) => A < B))
   }
 
 }
