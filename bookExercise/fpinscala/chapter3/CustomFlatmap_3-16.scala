@@ -1,5 +1,5 @@
 
-object Filter {
+object flatmap {
 
   def foldRight[A, B](as: List[A], z: B)(f: (A, B) => B): B =
     as match {
