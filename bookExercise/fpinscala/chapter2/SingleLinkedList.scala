@@ -1,27 +1,27 @@
-sealed trait List[+A]
+sealed trait MyList[+A]
 
-case object Nil extends List[Nothing]
+case object MyNil extends MyList[Nothing]
 
-case class Cons[+A](head: A, tail: List[A]) extends List[A]
+case class Cons[+A](head: A, tail: MyList[A]) extends MyList[A]
 
-object List {
-  def sum(list: List[Int]): Int = {
+object MyList {
+  def sum(list: MyList[Int]): Int = {
     list match {
-      case Nil => 0
+      case MyNil => 0
       case Cons(x, xs) => x + sum(xs)
     }
   }
 
-  def product(list: List[Int]): Int = {
+  def product(list: MyList[Int]): Int = {
     list match {
-      case Nil => 0
+      case MyNil => 0
       case Cons(0.0, _) => 0
       case Cons(x, xs) => x + sum(xs)
     }
   }
 
-  def apply[A](as: A*): List[A] = {
-    if (as.isEmpty) Nil
+  def apply[A](as: A*): MyList[A] = {
+    if (as.isEmpty) MyNil
     else Cons(as.head, apply(as.tail: _*))
   }
 }

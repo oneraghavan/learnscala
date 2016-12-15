@@ -11,7 +11,7 @@ object SetHead {
   def main(args: Array[String]) {
     println(sethead(List(1,2,3),4))
     println(sethead(Nil,4))
-    println(sethead(Nil,Nil))
+    println(sethead(Nil,MyNil))
   }
 
 }

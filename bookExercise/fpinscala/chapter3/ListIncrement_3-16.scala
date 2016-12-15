@@ -1,5 +1,5 @@
 
-object FoldLeft {
+object ListIncrement {
 
   def foldRight[A,B](as:List[A], z :B )(f : (A,B) => B) : B =
     as match {
@@ -8,7 +8,7 @@ object FoldLeft {
     }
 
   def main(args: Array[String]) {
-    println(foldRight(List(1,2,3,4), Nil : List[Int]) ((x,y) => (x + 1) :: y))
+    println(foldRight(List(1,2,3,4), Nil : List[Int]) ((x, y) => (x + 1) :: y))
   }
 
 }

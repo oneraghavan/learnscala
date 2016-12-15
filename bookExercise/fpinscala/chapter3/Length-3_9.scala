@@ -1,6 +1,6 @@
 
 //not done.
-object Init {
+object Length {
 
   def foldRight[A,B](as:List[A], z :B )(f : (A,B) => B) : B =
     as match {

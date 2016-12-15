@@ -1,3 +1,4 @@
+package fpinscala.chapter2
 
 object fibonaci {
 

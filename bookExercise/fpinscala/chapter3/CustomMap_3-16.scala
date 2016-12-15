@@ -1,5 +1,5 @@
 
-object FoldLeft {
+object CustomMap {
 
   def foldRight[A, B](as: List[A], z: B)(f: (A, B) => B): B =
     as match {
